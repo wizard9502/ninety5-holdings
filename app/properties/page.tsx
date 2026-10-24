@@ -10,8 +10,8 @@ export const metadata: Metadata = {
 export default function PropertiesPage() {
   return (
     <div>
-      <section className="relative overflow-hidden border-b border-white/5">
-        <div className="absolute inset-0 bg-gradient-to-b from-amber-500/10 via-transparent to-transparent" />
+      <section className="relative overflow-hidden border-b border-white/10">
+        <div className="absolute inset-0 bg-gradient-to-b from-white/[0.03] via-transparent to-transparent" />
         <div className="relative mx-auto max-w-6xl px-4 sm:px-6 pt-16 pb-20">
           <Link
             href="/"
@@ -19,7 +19,7 @@ export default function PropertiesPage() {
           >
             ← Back to Holdings
           </Link>
-          <p className="text-xs font-medium uppercase tracking-wider text-amber-400 mb-3">
+          <p className="text-xs font-medium uppercase tracking-wider text-zinc-500 mb-3">
             Real Assets
           </p>
           <h1 className="text-4xl sm:text-5xl font-semibold tracking-tight text-white flex items-center gap-2">
@@ -64,7 +64,7 @@ export default function PropertiesPage() {
                 },
               ].map((item) => (
                 <li key={item.title} className="flex gap-3">
-                  <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-amber-400 shrink-0" />
+                  <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-white shrink-0" />
                   <div>
                     <p className="font-medium text-white">{item.title}</p>
                     <p className="text-sm text-zinc-400 mt-0.5">{item.desc}</p>
@@ -76,7 +76,7 @@ export default function PropertiesPage() {
         </div>
       </section>
 
-      <section className="border-t border-white/5 bg-white/[0.02]">
+      <section className="border-t border-white/10 bg-white/[0.02]">
         <div className="mx-auto max-w-6xl px-4 sm:px-6 py-16">
           <h2 className="text-xl font-semibold text-white mb-6">Investment philosophy</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
