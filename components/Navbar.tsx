@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import { Logo } from "./Logo";
 
 const navItems = [
   { href: "/", label: "Home" },
@@ -18,14 +19,7 @@ export function Navbar() {
   return (
     <header className="sticky top-0 z-50 border-b border-white/5 bg-[#0a0a0b]/80 backdrop-blur-xl">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6">
-        <Link href="/" className="flex items-center gap-2.5 group">
-          <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-to-br from-emerald-400 to-emerald-600 text-sm font-bold text-black shadow-lg shadow-emerald-500/20">
-            95
-          </div>
-          <span className="text-lg font-semibold tracking-tight text-white group-hover:text-emerald-400 transition-colors">
-            Ninety5 <span className="text-zinc-400 font-normal">Holdings</span>
-          </span>
-        </Link>
+        <Logo variant="full" />
 
         {/* Desktop nav */}
         <nav className="hidden md:flex items-center gap-1">
