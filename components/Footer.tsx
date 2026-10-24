@@ -3,7 +3,7 @@ import { Logo } from "./Logo";
 
 export function Footer() {
   return (
-    <footer className="border-t border-white/5 bg-[#0a0a0b]">
+    <footer className="border-t border-white/10 bg-black">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="md:col-span-2">
@@ -42,7 +42,7 @@ export function Footer() {
                   href="https://bouteek.shop"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-emerald-400 transition-colors"
+                  className="hover:text-white transition-colors"
                 >
                   Bouteek →
                 </a>
@@ -51,7 +51,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-10 pt-6 border-t border-white/5 flex flex-col sm:flex-row justify-between items-center gap-4">
+        <div className="mt-10 pt-6 border-t border-white/10 flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-xs text-zinc-500">
             © {new Date().getFullYear()} Ninety5 Holdings. All rights reserved.
           </p>
