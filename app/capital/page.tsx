@@ -10,8 +10,8 @@ export const metadata: Metadata = {
 export default function CapitalPage() {
   return (
     <div>
-      <section className="relative overflow-hidden border-b border-white/5">
-        <div className="absolute inset-0 bg-gradient-to-b from-blue-500/10 via-transparent to-transparent" />
+      <section className="relative overflow-hidden border-b border-white/10">
+        <div className="absolute inset-0 bg-gradient-to-b from-white/[0.03] via-transparent to-transparent" />
         <div className="relative mx-auto max-w-6xl px-4 sm:px-6 pt-16 pb-20">
           <Link
             href="/"
@@ -19,7 +19,7 @@ export default function CapitalPage() {
           >
             ← Back to Holdings
           </Link>
-          <p className="text-xs font-medium uppercase tracking-wider text-blue-400 mb-3">
+          <p className="text-xs font-medium uppercase tracking-wider text-zinc-500 mb-3">
             Investment Arm
           </p>
           <h1 className="text-4xl sm:text-5xl font-semibold tracking-tight text-white flex items-center gap-2">
@@ -66,7 +66,7 @@ export default function CapitalPage() {
         </div>
       </section>
 
-      <section className="border-t border-white/5">
+      <section className="border-t border-white/10">
         <div className="mx-auto max-w-6xl px-4 sm:px-6 py-16">
           <h2 className="text-xl font-semibold text-white mb-6">Principles</h2>
           <div className="grid sm:grid-cols-3 gap-6">
