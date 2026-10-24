@@ -22,8 +22,12 @@ export default function CapitalPage() {
           <p className="text-xs font-medium uppercase tracking-wider text-blue-400 mb-3">
             Investment Arm
           </p>
-          <h1 className="text-4xl sm:text-5xl font-semibold tracking-tight text-white">
-            Ninety5 Capital
+          <h1 className="text-4xl sm:text-5xl font-semibold tracking-tight text-white flex items-center gap-2">
+            Ninety
+            <span className="inline-flex h-10 w-10 sm:h-12 sm:w-12 items-center justify-center rounded-xl bg-white text-black text-2xl sm:text-3xl font-bold">
+              5
+            </span>
+            <span className="ml-1">Capital</span>
           </h1>
           <p className="mt-5 text-lg text-zinc-400 max-w-2xl leading-relaxed">
             We allocate capital across public markets and digital assets, prioritizing asymmetric upside, durable competitive advantages, and thoughtful risk management.
