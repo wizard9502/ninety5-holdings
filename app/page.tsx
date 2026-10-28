@@ -22,6 +22,13 @@ const entities = [
     description:
       "Invests in and actively manages real estate portfolios, combining acquisition, development, and operations for sustainable long-term value.",
   },
+  {
+    name: "Ninety5 Foundation",
+    href: "/foundation",
+    tagline: "Charity arm",
+    description:
+      "Expands opportunity for young people and families through education, skills, and dignity — so talent is never wasted for lack of a chance.",
+  },
 ];
 
 export default function HomePage() {
@@ -41,7 +48,7 @@ export default function HomePage() {
               <span className="text-zinc-400">African enterprise</span>
             </h1>
             <p className="mt-6 text-lg text-zinc-400 leading-relaxed max-w-2xl">
-              Ninety5 Holdings is the parent platform for technology incubation, capital allocation, and real-asset ownership. We back operators and ideas that expand opportunity across West Africa and beyond.
+              Ninety5 Holdings is the parent platform for technology incubation, capital allocation, real-asset ownership, and community impact. We back operators and ideas that expand opportunity — and we give back through the Foundation.
             </p>
             <div className="mt-10 flex flex-wrap gap-4">
               <Link
@@ -50,14 +57,12 @@ export default function HomePage() {
               >
                 Explore Ventures
               </Link>
-              <a
-                href="https://bouteek.shop"
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                href="/foundation"
                 className="inline-flex items-center justify-center rounded-full border border-white/20 bg-transparent px-6 py-3 text-sm font-medium text-white hover:bg-white/10 transition-colors"
               >
-                Visit Bouteek →
-              </a>
+                Ninety5 Foundation
+              </Link>
             </div>
           </div>
         </div>
@@ -70,11 +75,11 @@ export default function HomePage() {
               Our arms
             </h2>
             <p className="mt-3 text-zinc-400 max-w-xl">
-              Three complementary platforms under one holding company, each with a clear mandate and independent operating focus.
+              Four complementary platforms under one holding company — business that builds, and a foundation that shares the upside.
             </p>
           </div>
 
-          <div className="grid gap-6 md:grid-cols-3">
+          <div className="grid gap-6 md:grid-cols-2">
             {entities.map((entity) => (
               <Link
                 key={entity.name}
