@@ -9,7 +9,7 @@ export function Footer() {
           <div className="md:col-span-2">
             <Logo variant="full" className="mb-4" />
             <p className="text-sm text-zinc-400 max-w-sm leading-relaxed mt-4">
-              Building durable African enterprise across technology, capital markets, and real assets.
+              Building durable African enterprise across technology, capital markets, real assets — and giving back through the Foundation.
             </p>
           </div>
 
@@ -29,6 +29,11 @@ export function Footer() {
               <li>
                 <Link href="/properties" className="hover:text-white transition-colors">
                   Ninety5 Properties
+                </Link>
+              </li>
+              <li>
+                <Link href="/foundation" className="hover:text-white transition-colors">
+                  Ninety5 Foundation
                 </Link>
               </li>
             </ul>

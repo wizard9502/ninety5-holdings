@@ -10,6 +10,7 @@ const navItems = [
   { href: "/ventures", label: "Ventures" },
   { href: "/capital", label: "Capital" },
   { href: "/properties", label: "Properties" },
+  { href: "/foundation", label: "Foundation" },
 ];
 
 export function Navbar() {
