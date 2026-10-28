@@ -4,9 +4,9 @@ const entities = [
   {
     name: "Ninety5 Ventures",
     href: "/ventures",
-    tagline: "Financial inclusion & technology",
+    tagline: "Technology incubation",
     description:
-      "Incubates and scales tech companies that expand access to digital commerce and financial services across West Africa. First project: Bouteek.",
+      "Incubates and scales technology companies across fintech, educational technology, software, and digital infrastructure. First project: Bouteek.",
   },
   {
     name: "Ninety5 Capital",
