@@ -1,68 +1,58 @@
 import Link from "next/link";
 import { Logo } from "./Logo";
+import { entities } from "@/lib/entities";
 
 export function Footer() {
   return (
-    <footer className="border-t border-white/10 bg-black">
-      <div className="mx-auto max-w-6xl px-4 sm:px-6 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          <div className="md:col-span-2">
-            <Logo variant="full" className="mb-4" />
-            <p className="text-sm text-zinc-400 max-w-sm leading-relaxed mt-4">
-              Building durable African enterprise across technology, capital markets, real assets — and giving back through the Foundation.
+    <footer className="relative overflow-hidden border-t border-white/10 bg-black">
+      <div className="mx-auto max-w-7xl px-4 sm:px-8 pt-16 pb-10">
+        <div className="grid grid-cols-1 gap-12 md:grid-cols-12">
+          <div className="md:col-span-5">
+            <Logo variant="full" />
+            <p className="mt-6 max-w-sm text-sm leading-relaxed text-zinc-400">
+              A holding company building durable African enterprise across technology, capital markets, and real assets — and giving back through the Foundation.
             </p>
           </div>
 
-          <div>
-            <h4 className="text-sm font-semibold text-white mb-3">Entities</h4>
-            <ul className="space-y-2 text-sm text-zinc-400">
-              <li>
-                <Link href="/ventures" className="hover:text-white transition-colors">
-                  Ninety5 Ventures
-                </Link>
-              </li>
-              <li>
-                <Link href="/capital" className="hover:text-white transition-colors">
-                  Ninety5 Capital
-                </Link>
-              </li>
-              <li>
-                <Link href="/properties" className="hover:text-white transition-colors">
-                  Ninety5 Properties
-                </Link>
-              </li>
-              <li>
-                <Link href="/foundation" className="hover:text-white transition-colors">
-                  Ninety5 Foundation
-                </Link>
-              </li>
+          <div className="md:col-span-4">
+            <h4 className="font-mono text-[11px] uppercase tracking-[0.2em] text-zinc-500">The group</h4>
+            <ul className="mt-5 space-y-3">
+              {entities.map((e) => (
+                <li key={e.slug}>
+                  <Link href={`/${e.slug}`} className="group flex items-baseline gap-3 text-sm text-zinc-300 hover:text-white">
+                    <span className="font-mono text-[10px] text-zinc-600">{e.index}</span>
+                    {e.name}
+                    <span className="translate-x-0 opacity-0 transition-all group-hover:translate-x-1 group-hover:opacity-100">→</span>
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
-          <div>
-            <h4 className="text-sm font-semibold text-white mb-3">Portfolio</h4>
-            <ul className="space-y-2 text-sm text-zinc-400">
+          <div className="md:col-span-3">
+            <h4 className="font-mono text-[11px] uppercase tracking-[0.2em] text-zinc-500">Portfolio</h4>
+            <ul className="mt-5 space-y-3 text-sm">
               <li>
-                <a
-                  href="https://bouteek.shop"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-white transition-colors"
-                >
-                  Bouteek →
+                <a href="https://bouteek.shop" target="_blank" rel="noopener noreferrer" className="text-zinc-300 hover:text-white">
+                  Bouteek ↗
                 </a>
               </li>
             </ul>
+            <h4 className="mt-10 font-mono text-[11px] uppercase tracking-[0.2em] text-zinc-500">Base</h4>
+            <p className="mt-5 text-sm text-zinc-300">Dakar, Senegal</p>
+            <p className="mt-1 font-mono text-xs text-zinc-600">14.69° N · 17.45° W</p>
           </div>
         </div>
 
-        <div className="mt-10 pt-6 border-t border-white/10 flex flex-col sm:flex-row justify-between items-center gap-4">
-          <p className="text-xs text-zinc-500">
-            © {new Date().getFullYear()} Ninety5 Holdings. All rights reserved.
-          </p>
-          <p className="text-xs text-zinc-600">
-            Dakar · West Africa
-          </p>
+        <div className="mt-16 flex flex-col gap-3 border-t border-white/10 pt-6 sm:flex-row sm:items-center sm:justify-between">
+          <p className="text-xs text-zinc-500">© {new Date().getFullYear()} Ninety5 Holdings. All rights reserved.</p>
+          <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-zinc-600">Est. 2025 · West Africa</p>
+        </div>
+      </div>
+
+      <div aria-hidden className="pointer-events-none select-none px-4 sm:px-8">
+        <div className="mx-auto max-w-7xl translate-y-[22%] text-[22vw] font-bold leading-none tracking-[-0.06em] text-white/[0.04] md:text-[17rem]">
+          Ninety5
         </div>
       </div>
     </footer>
