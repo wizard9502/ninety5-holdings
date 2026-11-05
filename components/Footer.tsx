@@ -4,13 +4,13 @@ import { entities } from "@/lib/entities";
 
 export function Footer() {
   return (
-    <footer className="relative overflow-hidden border-t border-white/10 bg-black">
+    <footer className="border-t border-white/10 bg-black">
       <div className="mx-auto max-w-7xl px-4 sm:px-8 pt-16 pb-10">
         <div className="grid grid-cols-1 gap-12 md:grid-cols-12">
           <div className="md:col-span-5">
             <Logo variant="full" />
             <p className="mt-6 max-w-sm text-sm leading-relaxed text-zinc-400">
-              A holding company building durable African enterprise across technology, capital markets, and real assets — and giving back through the Foundation.
+              Holding company for Ninety5 Ventures, Capital, Properties, and Foundation.
             </p>
           </div>
 
@@ -46,13 +46,7 @@ export function Footer() {
 
         <div className="mt-16 flex flex-col gap-3 border-t border-white/10 pt-6 sm:flex-row sm:items-center sm:justify-between">
           <p className="text-xs text-zinc-500">© {new Date().getFullYear()} Ninety5 Holdings. All rights reserved.</p>
-          <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-zinc-600">Est. 2025 · West Africa</p>
-        </div>
-      </div>
-
-      <div aria-hidden className="pointer-events-none select-none px-4 sm:px-8">
-        <div className="mx-auto max-w-7xl translate-y-[22%] text-[22vw] font-bold leading-none tracking-[-0.06em] text-white/[0.04] md:text-[17rem]">
-          Ninety5
+          <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-zinc-600">Est. 2025</p>
         </div>
       </div>
     </footer>

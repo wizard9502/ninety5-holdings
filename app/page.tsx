@@ -5,15 +5,15 @@ import { FiveBox, Section } from "@/components/Section";
 const tenets = [
   {
     title: "Long horizons",
-    body: "We think in decades, not quarters. Each arm is built to compound — products, positions, and property held with patience when the thesis holds.",
+    body: "We measure success in decades. Patience is an edge most markets underprice.",
   },
   {
     title: "Operator mindset",
-    body: "We build and run things ourselves. Local operating conditions — payments, connectivity, regulation, how people actually behave — are the starting point.",
+    body: "We build and run things ourselves, and design for local conditions from day one.",
   },
   {
     title: "Shared upside",
-    body: "Business builds the resources; the Foundation makes sure the circle of opportunity grows with us, starting with the communities that raised us.",
+    body: "Part of what the group earns goes back to the communities around us, through the Foundation.",
   },
 ];
 
@@ -25,7 +25,7 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-grid mask-fade-b" />
         <div className="absolute left-1/2 top-0 h-[480px] w-[900px] -translate-x-1/2 rounded-full bg-white/[0.04] blur-3xl" />
 
-        <div className="relative mx-auto max-w-7xl px-4 pt-16 sm:px-8 sm:pt-24">
+        <div className="relative mx-auto max-w-7xl px-4 pb-24 pt-16 sm:px-8 sm:pb-32 sm:pt-24">
           <p className="rise inline-flex items-center gap-2 font-mono text-[11px] uppercase tracking-[0.2em] text-zinc-400">
             <span className="h-1.5 w-1.5 rounded-full bg-white" />
             Holding company · Est. 2025 · Dakar
@@ -37,7 +37,7 @@ export default function HomePage() {
 
           <div className="mt-12 grid gap-10 md:grid-cols-12 md:items-end">
             <p className="rise rise-2 md:col-span-6 text-lg leading-relaxed text-zinc-400 text-pretty">
-              Ninety5 Holdings is the parent company of four arms — technology incubation, capital allocation, real-asset ownership, and community impact. We back operators and ideas that expand opportunity, and we give back through the Foundation.
+              A Dakar-based holding company. We build technology companies, invest in public markets, own and operate real estate — and give back.
             </p>
             <div className="rise rise-3 md:col-span-6 flex flex-wrap gap-3 md:justify-end">
               <Link
@@ -55,23 +55,6 @@ export default function HomePage() {
               </Link>
             </div>
           </div>
-
-          {/* Directory strip */}
-          <div className="rise rise-4 mt-20 grid grid-cols-2 border-t border-white/10 md:grid-cols-4">
-            {entities.map((e, k) => (
-              <Link
-                key={e.slug}
-                href={`/${e.slug}`}
-                className={`group py-6 pr-4 transition-colors md:py-8 ${k % 2 === 1 ? "pl-4 border-l border-white/10" : ""} ${
-                  k >= 2 ? "border-t border-white/10 md:border-t-0" : ""
-                } ${k === 2 ? "md:pl-4 md:border-l" : ""}`}
-              >
-                <span className="font-mono text-[10px] text-zinc-600">{e.index}</span>
-                <p className="mt-3 font-medium text-white">{e.short}</p>
-                <p className="mt-1 text-sm text-zinc-500 group-hover:text-zinc-300">{e.tagline} →</p>
-              </Link>
-            ))}
-          </div>
         </div>
       </section>
 
@@ -83,7 +66,7 @@ export default function HomePage() {
               <span className="text-zinc-600">01</span>&nbsp;&nbsp;The group
             </p>
             <h2 className="md:col-span-9 max-w-3xl text-3xl font-semibold leading-tight tracking-[-0.03em] text-white sm:text-5xl text-balance">
-              One holding company. Four arms. <span className="text-zinc-500">Business that builds, and a foundation that shares the upside.</span>
+              One holding company. <span className="text-zinc-500">Four arms, each with its own mandate.</span>
             </h2>
           </div>
 
@@ -172,31 +155,7 @@ export default function HomePage() {
             </span>
           </a>
         </div>
-        <p className="mt-6 max-w-2xl text-sm leading-relaxed text-zinc-500">
-          Our first incubated company — commerce software for West African merchants. Ventures continues to build across fintech, educational technology, software, and digital infrastructure.
-        </p>
       </Section>
-
-      {/* Closing statement */}
-      <section className="border-t border-white/10">
-        <div className="mx-auto max-w-7xl px-4 py-24 sm:px-8 md:py-36">
-          <p className="max-w-5xl text-4xl font-semibold leading-[1.02] tracking-[-0.045em] text-white sm:text-6xl lg:text-7xl text-balance">
-            Durable companies. Disciplined capital. Real assets. <span className="text-zinc-500">And a promise to give back.</span>
-          </p>
-          <div className="mt-12 flex flex-wrap gap-3">
-            {entities.map((e) => (
-              <Link
-                key={e.slug}
-                href={`/${e.slug}`}
-                className="inline-flex items-baseline gap-2 rounded-full border border-white/15 px-4 py-2 text-sm text-zinc-300 transition-colors hover:border-white hover:bg-white hover:text-black"
-              >
-                <span className="font-mono text-[10px] opacity-60">{e.index}</span>
-                {e.short}
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
     </div>
   );
 }

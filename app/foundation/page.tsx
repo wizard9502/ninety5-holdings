@@ -9,14 +9,5 @@ export const metadata: Metadata = {
 };
 
 export default function FoundationPage() {
-  return (
-    <EntityPage
-      entity={getEntity("foundation")}
-      closingNote={
-        <p>
-          If you share this vision — as a partner, a community organization, or someone who simply believes talent should never be left behind — we would be glad to hear from you.
-        </p>
-      }
-    />
-  );
+  return <EntityPage entity={getEntity("foundation")} />;
 }

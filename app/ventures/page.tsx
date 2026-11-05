@@ -12,12 +12,11 @@ export const metadata: Metadata = {
 function Portfolio() {
   return (
     <Section index="E" label="Portfolio">
-      <p className="text-zinc-500 text-sm">Selected projects</p>
       <a
         href="https://bouteek.shop"
         target="_blank"
         rel="noopener noreferrer"
-        className="group mt-6 grid gap-6 rounded-2xl border border-white/10 p-7 transition-colors hover:border-white/30 sm:grid-cols-[auto,1fr,auto] sm:items-start sm:p-10"
+        className="group grid gap-6 rounded-2xl border border-white/10 p-7 transition-colors hover:border-white/30 sm:grid-cols-[auto,1fr,auto] sm:items-start sm:p-10"
       >
         <FiveBox className="h-14 w-14 rounded-xl text-2xl" />
         <div>
@@ -29,7 +28,7 @@ function Portfolio() {
           </div>
           <p className="mt-1 text-sm text-zinc-500">bouteek.shop · Digital commerce</p>
           <p className="mt-4 max-w-2xl leading-relaxed text-zinc-400">
-            Commerce software for merchants: storefronts, Wave & Orange Money, inventory and orders — built for West African operating conditions. One example of how we approach product in a specific domain; the Ventures mandate spans fintech, edtech, software, and infrastructure more broadly.
+            Commerce software for West African merchants — storefronts, Wave & Orange Money payments, inventory, and orders in one place.
           </p>
         </div>
         <span className="text-2xl text-zinc-500 transition-all group-hover:-translate-y-1 group-hover:translate-x-1 group-hover:text-white">↗</span>
